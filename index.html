@@ -2,10 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> </title>
+  <title> Module 2 Solution Coursera </title>
+  <style>
+    .style {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      font-weight: 900;
+    }
+    p {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      font-size: 15px;
+      font-weight: 300;
+    }
+    div {
+      font-size: 20px;
+      font-weight: 600;
+      background-color: lightcoral;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .col-1-title {
+      background-color: green;
+      border: 2px solid black;
+      width: 30%;
+      text-align: center;
+      margin-left: 70%;
+
+    }
+    .col-2-title {
+      background-color: blueviolet;
+      border: 2px solid black;
+      width: 30%;
+      text-align: center;
+      margin-left: 70%;
+    }
+    .col-3-title {
+      background-color: pink;
+      border: 2px solid black;
+      width: 30%;
+      text-align: center;
+      margin-left: 70%;
+
+    }
+    .row {
+      width: 100%;
+    }
+    /* Tela GRANDE da prova */
+      @media (min-width: 992px) {
+        .col-lar-4 {
+          float: left;
+          border: 1px solid black;
+        }
+        .col-lar-4 {
+          width: 30%;
+        }
+
+      }
+
+    /* Tela MEDIA da prova */
+      @media (min-width: 768px) and (max-width: 991px) {
+        .col-med-6, .col-med-12{
+          float: left;
+          border: 1px solid black;
+        }
+        .col-med-6 {
+          width: 50%;
+        }
+        .col-med-12 {
+          width: 100%;
+        }
+      }
+    /* Tela PEQUENA da prova */
+      @media (max-width: 767px) {
+        .col-sm-12 {
+          float: left;
+          border: 1px solid black;
+        }
+        .col-sm-12 {
+          width: 100%
+        }
+      }
+  </style>
 </head>
 <body>
+  <h1>How to use Kamehameha</h1>
 
+  <div class="row">
+    <div class="col-lar-4 col-med-6  col-sm-12"> 
+      <div class="col-1-title">Concetrate</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur odio lectus, id tempus enim aliquam a. Etiam molestie nulla at molestie efficitur. Aliquam id rutrum sapien, non pharetra quam. Nullam sed tellus scelerisque metus viverra viverra in sit amet neque. Maecenas placerat lacinia vulputate. Fusce at venenatis dui</p>
+    </div>
+
+    <div class="col-lar-4 col-med-6 col-sm-12"> 
+      <div class="col-2-title">Gather</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur odio lectus, id tempus enim aliquam a. Etiam molestie nulla at molestie efficitur. Aliquam id rutrum sapien, non pharetra quam. Nullam sed tellus scelerisque metus viverra viverra in sit amet neque. Maecenas placerat lacinia vulputate. Fusce at venenatis dui</p>
+    </div>
+
+    <div class="col-lar-4 col-med-12 col-sm-12"> 
+      <div class="col-3-title"> Shoot</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur odio lectus, id tempus enim aliquam a. Etiam molestie nulla at molestie efficitur. Aliquam id rutrum sapien, non pharetra quam. Nullam sed tellus scelerisque metus viverra viverra in sit amet neque. Maecenas placerat lacinia vulputate. Fusce at venenatis dui</p>
+    </div>
+  </div>
 </body>
 </html>
 
