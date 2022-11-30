@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Module 2 Solution Coursera </title>
   <style>
     .style {
@@ -24,20 +25,20 @@
       text-align: left;
       font-size: 15px;
       font-weight: 300;
+      padding: 20px 10px 10px 10px;
     }
     div {
       font-size: 20px;
       font-weight: 600;
       background-color: lightcoral;
-      margin-left: auto;
-      margin-right: auto;
+
     }
     .col-1-title {
       background-color: green;
       border: 2px solid black;
       width: 30%;
       text-align: center;
-      margin-left: 70%;
+      float: right;
 
     }
     .col-2-title {
@@ -45,27 +46,30 @@
       border: 2px solid black;
       width: 30%;
       text-align: center;
-      margin-left: 70%;
+      float: right;
     }
     .col-3-title {
       background-color: pink;
       border: 2px solid black;
       width: 30%;
       text-align: center;
-      margin-left: 70%;
+      float: right;
 
     }
     .row {
       width: 100%;
+      margin: 0px;
+      padding: 0px;
     }
     /* Tela GRANDE da prova */
       @media (min-width: 992px) {
         .col-lar-4 {
           float: left;
           border: 1px solid black;
+          margin: 10px;
         }
         .col-lar-4 {
-          width: 30%;
+          max-width: 30%;
         }
 
       }
@@ -75,12 +79,14 @@
         .col-med-6, .col-med-12{
           float: left;
           border: 1px solid black;
+          margin: 10px;
         }
         .col-med-6 {
-          width: 50%;
+          max-width: 50%;
+          
         }
         .col-med-12 {
-          width: 100%;
+          max-width: 100%;
         }
       }
     /* Tela PEQUENA da prova */
@@ -88,9 +94,8 @@
         .col-sm-12 {
           float: left;
           border: 1px solid black;
-        }
-        .col-sm-12 {
-          width: 100%
+          margin: 10px;
+          max-width: 100%; 
         }
       }
   </style>
@@ -116,9 +121,3 @@
   </div>
 </body>
 </html>
-
-
-
-
-
-
